@@ -15,7 +15,7 @@ const buttonsArray = [
       id: uuidv4(),
     },
     {
-      heading: "Links",
+      heading: "Contact Me",
     //   image: "filpath",
     //   link: "multiple link properties with links to a resume, or phone number, github",
       id: uuidv4(),

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from "../UI/Buttons/Buttons";
 import "./Card.css";
+import githubLogo from "../../assets/github-mark-white.svg";
 
 const Card = ({ projectsArray }) => {
   return (
@@ -17,7 +18,12 @@ const Card = ({ projectsArray }) => {
           />
         </div>
       </a>
-      <Button title={"Github"} link={projectsArray.github} />
+      <Button
+        title={"Github"}
+        link={projectsArray.github}
+        logo={githubLogo}
+        className={'githubBtn'}
+      />
     </div>
   );
 };

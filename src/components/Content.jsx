@@ -8,6 +8,12 @@ import "./Content.css";
 
 const Content = () => {
   const [displayedContent, setDisplayedContent] = useState(0);
+
+  const projects = 
+        <div className="content-cards">{projectsArray.map((projects) => (<Card key={projects.id} projectsArray={projects}/>))}</div>
+
+  const links = <></>
+
   return (
     <div className='content-body'>
       {buttonsArray.map((element) => (
@@ -19,8 +25,7 @@ const Content = () => {
       ))}
       <div className='line-break'></div>
       <div className='content-box'>
-        {displayedContent === 0 ? <About /> : false}
-        <div className="content-cards">{projectsArray.map((projects) => (<Card key={projects.id} projectsArray={projects}/>))}</div>
+        {displayedContent === 0 ? <About/> : displayedContent === 1 ? projects : links}
       </div>
     </div>
   );

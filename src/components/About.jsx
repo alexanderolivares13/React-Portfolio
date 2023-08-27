@@ -1,11 +1,21 @@
 import "./About.css";
-import profilePicture from '../assets/profile-placeholder.png'
+import profilePicture from "../assets/profile-placeholder.png";
+import { skills, experience, biography } from "./js/aboutMe";
+
 const About = () => {
   return (
     <div className='about-me'>
       <h2>Greetings!</h2>
-      <img src={profilePicture} className="profile-img"/>
-      <p>My name is Alexander Olivares</p>
+      <img src={profilePicture} className='profile-img' />
+      {biography}
+      <h3>Skills:</h3>
+      <ul>
+        {skills.map((element, i) => (
+          <li key={i}>{element}</li>
+        ))}
+      </ul>
+      <h3>Experience:</h3>
+      {experience}
     </div>
   );
 };

@@ -3,19 +3,32 @@
     margin-top: 3%;
 }
 
-.about-me h2 {
+.about-me h2,
+.about-me h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #48d9f3;
     font-size: 2.5rem;
+    border-bottom: groove;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-me h3 {
+    margin-top: 20px;
 }
 
 .about-me p {
+    font-family: 'Times New Roman', Times, serif;
     margin-left: 1.2rem;
     font-size: 1.2rem;
-    display: inline-block;
+    display: inline;
 }
 
 .profile-img {
+    margin-right: 1.2rem;
     border-radius: 24px;
     max-width: 100px;
     max-height: 100px;
-    display: inline-block;
+    display: inline;
+    float: left;
 }

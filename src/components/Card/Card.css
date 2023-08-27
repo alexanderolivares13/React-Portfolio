@@ -9,6 +9,12 @@
     font-size: medium;
 }
 
+.wrapper h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: #bdd1d4;
+}
+
 .card {
     background-color: #181c1f;
     border-radius: 12px;
@@ -25,16 +31,16 @@
 }
 
 .card img {
-    border-radius: 6px;
+    border-radius: 10px;
     width: fit-content;
     height: fit-content;
     max-width: 295px;
-    max-height: 300px;
+    max-height: 295px;
 }
 
 .top-layer {
-    width: 300px;
-    height: 300px;
+    width: 295px;
+    height: 295px;
     border-radius: 12px;
     color: #bdd1d4;
     background-color: #181c1f;
@@ -58,4 +64,11 @@
 .top-layer:hover {
     opacity: 90%;
     visibility: visible;
+}
+
+.githubBtn {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 6px;
 }
