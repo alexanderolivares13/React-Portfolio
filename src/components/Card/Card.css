@@ -45,7 +45,6 @@
     color: #bdd1d4;
     background-color: #181c1f;
     position: absolute;
-    /* visibility: hidden; */
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -71,4 +70,24 @@
     height: 24px;
     border-radius: 12px;
     margin-right: 6px;
+}
+
+.links {
+    margin: 5% 50px;
+    font-size: 2.0rem;
+    color: #bdd1d4;
+    text-align: center;
+}
+
+.links ul {
+    margin: 5%;
+    list-style: none;
+}
+
+.links ul li {
+    margin: 3% 0;
+}
+
+.links img {
+    margin-right: 5%;
 }
