@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
-import './Card.css'
+import "./Card.css";
 
-const Card = ({contentArray}) => {
-    return <a href={contentArray.link}>
-        <div>
-        </div>
+const Card = ({ projectsArray }) => {
+  return (
+    <a href={projectsArray.link}>
+      <div className='card'></div>
     </a>
-}
+  );
+};
 
-export default Card
+export default Card;
