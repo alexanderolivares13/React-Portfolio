@@ -1,7 +1,8 @@
 import Button from "./UI/Buttons/Buttons";
-// import Card from "./Card/Card";
+import Card from "./Card/Card";
 import About from "./About";
 import buttonsArray from "./js/arrays";
+import projectsArray from "./js/projects";
 import { useState } from "react";
 import "./Content.css";
 
@@ -19,6 +20,7 @@ const Content = () => {
       <div className='line-break'></div>
       <div className='content-box'>
         {displayedContent === 0 ? <About /> : false}
+        <div className="content-cards">{projectsArray.map((projects) => (<Card key={projects.id} projectsArray={projects}/>))}</div>
       </div>
     </div>
   );

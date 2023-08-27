@@ -20,11 +20,6 @@ const buttonsArray = [
     //   link: "multiple link properties with links to a resume, or phone number, github",
       id: uuidv4(),
     },
-    {
-      heading: "Resume",
-    //   link: "",
-      id: uuidv4(),
-    },
   ];
 
   export default buttonsArray

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Buttons.css";
 
-const Button = ({ title, onDisplayContent}) => {
+const Button = ({ title, onDisplayContent, link }) => {
   const clickHandler = () => {
     if (title === "About Me") {
       onDisplayContent(0);
@@ -10,7 +10,7 @@ const Button = ({ title, onDisplayContent}) => {
     } else if (title === "Links") {
       onDisplayContent(2);
     } else {
-      onDisplayContent(3);
+      window.location.replace(link);
     }
   };
   return <button onClick={clickHandler}>{title}</button>;
