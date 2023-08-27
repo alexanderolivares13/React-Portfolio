@@ -1,0 +1,16 @@
+.content-body {
+    margin: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.line-break{
+    width: 100%;
+}
+
+.content-box {
+    width: 60%;
+    height: 80%;
+}
