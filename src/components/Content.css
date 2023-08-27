@@ -1,3 +1,9 @@
+.content-box {
+    width: 60%;
+    height: 80%;
+    padding: 1%;
+}
+
 .content-body {
     margin: 5% 0;
     display: flex;
@@ -6,16 +12,12 @@
     justify-content: center;
 }
 
-.line-break{
+.line-break {
     width: 100%;
 }
 
-.content-box {
-    width: 60%;
-    height: 80%;
-}
 
-.content-cards{
+.content-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
