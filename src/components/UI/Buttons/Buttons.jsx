@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./Buttons.css";
 
-const Button = ({ title, onDisplayContent, link, logo, className }) => {
+const Button = ({ title, onDisplayContent, link, logo, className, alt }) => {
   const clickHandler = () => {
     if (title === "About Me") {
       onDisplayContent(0);
@@ -13,7 +13,12 @@ const Button = ({ title, onDisplayContent, link, logo, className }) => {
       window.location.replace(link);
     }
   };
-  return <button onClick={clickHandler}>{<img src={logo} className={className}/>}{title}</button>;
+  return (
+    <button onClick={clickHandler}>
+      {<img src={logo} className={className} alt={alt} />}
+      {title}
+    </button>
+  );
 };
 
 export default Button;

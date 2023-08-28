@@ -27,7 +27,7 @@ const Content = () => {
           {contactsArray.map((contact) => (
             <li key={contact.name}>
               <a href={contact.link}>
-                <img src={contact.logo} />
+                <img src={contact.logo} alt={contact.alt} />
                 {contact.name}
               </a>
             </li>

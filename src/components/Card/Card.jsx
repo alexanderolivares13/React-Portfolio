@@ -22,7 +22,8 @@ const Card = ({ projectsArray }) => {
         title={"Github"}
         link={projectsArray.github}
         logo={githubLogo}
-        className={'githubBtn'}
+        className={"githubBtn"}
+        alt={"Small image of the Github logo on the button"}
       />
     </div>
   );
