@@ -1,5 +1,5 @@
 import "./About.css";
-import profilePicture from "../assets/profile-placeholder.png";
+import profilePicture from "../assets/profile-picture.png";
 import { skills, experience, biography } from "./jsxArrays/aboutMe";
 
 const About = () => {
