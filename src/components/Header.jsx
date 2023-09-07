@@ -7,9 +7,21 @@ const Header = () => {
     <header>
       <h1>Built with</h1>
       <div className='logos'>
-        <img src={reactLogo} alt='Small image of the React logo' />
+        <a href='https://react.dev'>
+          <img
+            src={reactLogo}
+            alt='Small image of the React logo'
+            aria-label='React Logo'
+          />
+        </a>
         <span> + </span>
-        <img src={viteLogo} alt='Small image of the Vite logo' />
+        <a href='https://vitejs.dev'>
+          <img
+            src={viteLogo}
+            alt='Small image of the Vite logo'
+            aria-label='Vite Logo'
+          />
+        </a>
       </div>
       <h1 className='name-header'>
         Alexander <span id='last-name'>Olivares</span>
