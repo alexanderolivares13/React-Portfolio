@@ -39,8 +39,8 @@ const projectsArray = [
     image: RMS,
     shortDescription:
       "A simple CLI program, built with Node.js, MySQL, and Express server package. Focusing on MySQL, the program allows data editing of user data with full CRUD implementation on the server side.",
-    link: "https://www.github.com/alexanderolivares13/Role-Mangement-System",
-    github: "https://www.github.com/alexanderolivares13/Role-Mangement-System",
+    link: "https://github.com/alexanderolivares13/Role-Management-System",
+    github: "https://github.com/alexanderolivares13/Role-Management-System",
     id: uuidv4(),
   },
   {
@@ -57,8 +57,8 @@ const projectsArray = [
     image: DBMS,
     shortDescription:
       "A simple CLI program, built with Node.js, Express server package, MySQL, and Sequelize ORM. My first project utilizing full CRUD implementation whith a complete database. The app allows users to update and test the app using Insomnia.",
-    link: "https://www.github.com/alexanderolivares13/Ecommerce-DBMS",
-    github: "https://www.github.com/alexanderolivares13/Ecommerce-DBMS",
+    link: "https://github.com/alexanderolivares13/Ecommerce-DBMS",
+    github: "https://github.com/alexanderolivares13/Ecommerce-DBMS",
     id: uuidv4(),
   },
 ];
