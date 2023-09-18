@@ -1,6 +1,6 @@
 import "./About.css";
-import profilePicture from "../assets/profile-picture.png";
-import { skills, experience, biography } from "./jsxArrays/aboutMe";
+import profilePicture from "../../assets/profile-picture.png";
+import { skills, experience, biography } from "../jsxArrays/aboutMe";
 
 const About = () => {
   return (
