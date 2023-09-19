@@ -2,6 +2,7 @@ import Button from "../UI/Buttons/Buttons";
 import About from "./About";
 import Projects from "./Projects";
 import Links from "./Links";
+import Resume from "./Resume";
 import buttonsArray from "../jsxArrays/arrays";
 import { useState } from "react";
 
@@ -25,8 +26,10 @@ const Content = () => {
           <About />
         ) : displayedContent === 1 ? (
           <Projects />
-        ) : (
+        ) : displayedContent === 2 ? (
           <Links />
+        ) : (
+          <Resume />
         )}
       </div>
     </div>

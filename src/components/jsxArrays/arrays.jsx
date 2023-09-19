@@ -1,25 +1,22 @@
-import { v4 as uuidv4 } from 'uuid';
-
+import { v4 as uuidv4 } from "uuid";
 
 const buttonsArray = [
-    {
-      heading: "About Me",
-    //   image: "filepath",
-      id: uuidv4(),
-    },
-    {
-      heading: "Projects",
-    //   image: "filepath",
-    //   link: "a link to the deployed project",
-    //   shortDesc: "A description to transform and show on hover",
-      id: uuidv4(),
-    },
-    {
-      heading: "Contact Me",
-    //   image: "filpath",
-    //   link: "multiple link properties with links to a resume, or phone number, github",
-      id: uuidv4(),
-    },
-  ];
+  {
+    heading: "About Me",
+    id: uuidv4(),
+  },
+  {
+    heading: "Projects",
+    id: uuidv4(),
+  },
+  {
+    heading: "Contact Me",
+    id: uuidv4(),
+  },
+  {
+    heading: "Resume",
+    id: uuidv4(),
+  },
+];
 
-  export default buttonsArray
+export default buttonsArray;

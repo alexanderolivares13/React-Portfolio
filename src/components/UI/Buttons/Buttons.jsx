@@ -9,6 +9,8 @@ const Button = ({ title, onDisplayContent, link, logo, className, alt }) => {
       onDisplayContent(1);
     } else if (title === "Contact Me") {
       onDisplayContent(2);
+    } else if (title === "Resume") {
+      onDisplayContent(3);
     } else {
       window.location.replace(link);
     }

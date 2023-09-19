@@ -1,6 +1,6 @@
 import "./About.css";
 import profilePicture from "../../assets/profile-picture.png";
-import { skills, experience, biography } from "../jsxArrays/aboutMe";
+import { skills, biography } from "../jsxArrays/aboutMe";
 
 const About = () => {
   return (
@@ -14,8 +14,8 @@ const About = () => {
           <li key={i}>{element}</li>
         ))}
       </ul>
-      <h3>Experience:</h3>
-      {experience}
+      {/* <h3>Experience:</h3>
+      {experience} */}
     </div>
   );
 };
