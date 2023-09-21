@@ -1,9 +1,8 @@
 header {
     display: flex;
-    margin: 2% 0;
     gap: 1.5rem;
     align-items: center;
-    color: #bdd1d4;
+    color: var(--pale-blue);
 }
 
 header h1 {
@@ -11,6 +10,23 @@ header h1 {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.section-links {
+    margin-left: auto;
+}
+
+.section-links a {
+    font-size: 1.5rem;
+    padding-left: 25px;
+}
+
+.section-links a:hover {
+    cursor: pointer;
+}
+
+.active-link {
+    color: var(--bright-blue);
 }
 
 .logos span {
@@ -23,5 +39,5 @@ header h1 {
 }
 
 #last-name {
-    color: #48d9f3;
+    color: var(--bright-blue);
 }

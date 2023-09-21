@@ -1,8 +1,21 @@
 import "./Header.css";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "../assets/vite.svg";
+import headingArray from "./jsxArrays/arrays";
 
-const Header = () => {
+const Header = ({ onDisplayContent, displayedContent }) => {
+  const clickHandler = (e) => {
+    if (e.target.innerHTML === "About Me") {
+      onDisplayContent(0);
+    } else if (e.target.innerHTML === "Projects") {
+      onDisplayContent(1);
+    } else if (e.target.innerHTML === "Contact Me") {
+      onDisplayContent(2);
+    } else if (e.target.innerHTML === "Resume") {
+      onDisplayContent(3);
+    }
+  };
+
   return (
     <header>
       <h1>Built with</h1>
@@ -22,6 +35,17 @@ const Header = () => {
             aria-label='Vite Logo'
           />
         </a>
+      </div>
+      <div className='section-links'>
+        {headingArray.map((item, index) => (
+          <a
+            key={item.id}
+            onClick={clickHandler}
+            className={displayedContent === index ? "active-link" : ""}
+          >
+            {item.heading}
+          </a>
+        ))}
       </div>
       <h1 className='name-header'>
         Alexander <span id='last-name'>Olivares</span>

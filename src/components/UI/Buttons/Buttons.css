@@ -3,6 +3,6 @@ button {
     font-size: 1.3rem;
     font-family: sans-serif;
     width: fit-content;
-    background-color: #bdd1d4;
+    background-color: var(--pale-blue);
     color: #585454;
 }

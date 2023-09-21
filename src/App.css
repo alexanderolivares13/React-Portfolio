@@ -1,7 +1,24 @@
-* {
-    background-color: #181c1f;
+:root {
+    --pale-blue: #bdd1d4;
+    --bright-blue: #48d9f3;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    background-color: #181c1f;
+}
+
 a {
     text-decoration: none;
     color: #bdd1d4;

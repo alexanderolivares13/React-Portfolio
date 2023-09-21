@@ -12,7 +12,7 @@
 .wrapper h3 {
     margin-top: 50px;
     margin-bottom: 0;
-    color: #bdd1d4;
+    color: var(--pale-blue);
 }
 
 .card {
@@ -42,7 +42,7 @@
     width: 295px;
     height: 295px;
     border-radius: 12px;
-    color: #bdd1d4;
+    color: var(--pale-blue);
     background-color: #181c1f;
     position: absolute;
     opacity: 0;
@@ -70,24 +70,4 @@
     height: 24px;
     border-radius: 12px;
     margin-right: 6px;
-}
-
-.links {
-    margin: 5% 50px;
-    font-size: 2.0rem;
-    color: #bdd1d4;
-    text-align: center;
-}
-
-.links ul {
-    margin: 5%;
-    list-style: none;
-}
-
-.links ul li {
-    margin: 3% 0;
-}
-
-.links img {
-    margin-right: 5%;
 }
