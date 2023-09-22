@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import Resume from "./Resume";
 
 import "./Content.css";
+import Contact from "./Contact";
 
 const Content = ({ displayedContent }) => {
   return (
@@ -13,7 +14,7 @@ const Content = ({ displayedContent }) => {
         ) : displayedContent === 1 ? (
           <Projects />
         ) : displayedContent === 2 ? (
-          <Placeholder />
+          <Contact />
         ) : (
           <Resume />
         )}

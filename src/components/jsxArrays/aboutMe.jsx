@@ -1,5 +1,3 @@
-
-
 const biography = (
   <p>
     My name is Alexander Olivares, and I&#39;m on a journey to transform from a
@@ -71,11 +69,11 @@ const experience = (
 const skills = [
   "Languages: JavaScript (Node.js, Vanilla JS), SQL",
   "Front-End: React, HTML, CSS, Bootstrap, jQuery, Handlebars",
-  "Back-End: Node.js, Sequelize ORM (for database management)",
-  "Database: MySQL",
+  "Back-End: Node.js, Sequelize ORM (for database management), Mongoose ODM",
+  "Database: MySQL, MongoDB",
   "Problem Solving: Natural inclination for effective solutions",
   "Self-Taught: Learned React through independent learning to further expand my knowledge",
-  "Further Aspirations: Learn Typescript, C++, and Python",
+  "Further Aspirations: Learn Typescript, C#, and Python",
 ];
 
 export { experience, skills, biography };
