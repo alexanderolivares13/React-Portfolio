@@ -49,12 +49,15 @@ const Contact = () => {
             type='email'
             value={formState.email}
             id='email'
+            // sets the email validator tooltip to be visible, once the user focuses on the input field. is initially hidden to allow the user to select the field first. The state controlling the visibility will be changed on user input once a valid email is detected.
             onFocus={() => setTooltipVisible(true)}
+            // onBlur checks if the user has entered anything into the field and will show a Field Required message if they leave the field without entering any information.
             onBlur={() =>
               !isEmailEmpty && formState.email === ""
                 ? setIsEmailEmpty(true)
                 : setIsEmailEmpty(false)
             }
+            // any time the user types into the email box the regex test is ran to attempt to validate the email. once a valid email is detected, the error message is hidden.
             onChange={(e) => {
               setFormState({ ...formState, email: e.target.value });
               emailReg.test(formState.email)
@@ -64,6 +67,7 @@ const Contact = () => {
             }}
             placeholder='something@example.com'
           />
+          {/* the error message that appears if the user hasn't entered a valid email address */}
           {isValid === false && tooltipVisible && (
             <div
               style={{
@@ -73,6 +77,7 @@ const Contact = () => {
               {isValid ? "" : "Invalid Email"}
             </div>
           )}
+          {/* the error message that appears with the onBlur function */}
           {isEmailEmpty && <div style={{ color: "red" }}>Required Field</div>}
         </div>
         <div>

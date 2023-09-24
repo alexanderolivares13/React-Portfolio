@@ -14,8 +14,6 @@ const About = () => {
           <li key={i}>{element}</li>
         ))}
       </ul>
-      {/* <h3>Experience:</h3>
-      {experience} */}
     </div>
   );
 };

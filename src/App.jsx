@@ -6,6 +6,7 @@ import { useState } from "react";
 import Links from "./components/Sections/Links";
 
 function App() {
+  // state is declared here to be passed into multiple components that require it to change what is on the page
   const [displayedContent, setDisplayedContent] = useState(0);
   return (
     <div className='container-fluid app-container'>
@@ -14,7 +15,9 @@ function App() {
         onDisplayContent={setDisplayedContent}
       />
       <Content displayedContent={displayedContent} />
-      <h2 style={{textAlign: 'center', color:"#48d9f3"}}>Connect with me:</h2>
+      <h2 style={{ textAlign: "center", color: "#48d9f3" }}>
+        Connect with me:
+      </h2>
       <Links />
     </div>
   );

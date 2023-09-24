@@ -6,6 +6,7 @@ import "./Content.css";
 import Contact from "./Contact";
 
 const Content = ({ displayedContent }) => {
+  //the content compontent returns the view that is appropriate for the current state that is passed from the app component.
   return (
     <div className='content-body'>
       <div className='content-box'>
