@@ -67,9 +67,9 @@ const experience = (
 );
 
 const skills = [
-  "Languages: JavaScript (Node.js, Vanilla JS), SQL",
+  "Languages: JavaScript (Node.js, Vanilla JS), SQL, NoSQL",
   "Front-End: React, HTML, CSS, Bootstrap, jQuery, Handlebars",
-  "Back-End: Node.js, Sequelize ORM (for database management), Mongoose ODM",
+  "Back-End: Node.js, Sequelize ORM (for database management), Mongoose ODM, REST API, GraphQL",
   "Database: MySQL, MongoDB",
   "Problem Solving: Natural inclination for effective solutions",
   "Self-Taught: Learned React through independent learning to further expand my knowledge",
